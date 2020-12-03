@@ -1,0 +1,29 @@
+// Function was used when we called him
+
+// Напишите функцию, которая возводит число a в степень b. Причем a и b вводятся с клавиатуры.
+#include <iostream>
+using namespace std;
+
+int exponent(int a, int b)
+{
+    int result = 1;
+    
+    for(int i = 0; i < b; i++)
+    {
+        result *= a;
+    }
+    return result;
+}
+
+int main()
+{
+    int a = 0;
+    int b = 0;
+    cin >> a;
+    cin >> b;
+    
+    int value = exponent(a, b);
+    cout << a << "^" << b << " = " << value;
+    
+    return 0;
+}
